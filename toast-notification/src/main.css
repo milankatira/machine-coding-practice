@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+.success {
+    background-color: green;
+}
+.error {
+    background-color: rgb(213, 79, 79);
+}
+
+.warning {
+    background-color: yellow;
+}
+
+.info {
+    background-color: rgb(66, 66, 255);
+}
+
+
+.top-right {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+}
+
+.top-left {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+}
+
+.bottom-right {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.bottom-left {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+}
+
