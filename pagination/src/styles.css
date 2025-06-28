@@ -1,0 +1,80 @@
+.App {
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.page__container {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+  flex-wrap: wrap;
+}
+
+.page__container > p {
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid #d1d5db;
+  background-color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.page__container > p:hover {
+  background-color: #e0f2fe;
+  border-color: #38bdf8;
+}
+
+.page__container > p.active {
+  background-color: #38bdf8;
+  color: white;
+  font-weight: 600;
+  border-color: #38bdf8;
+}
+
+button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  margin: 10px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+button:disabled {
+  background-color: #cbd5e1;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #2563eb;
+}
+
+.product-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 1rem;
+}
+
+.product-list p {
+  padding: 8px;
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+  text-align: left;
+}
