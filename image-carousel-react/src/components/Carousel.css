@@ -1,0 +1,90 @@
+.carousel {
+    position: relative;
+    max-width: 600px;
+    margin: 2rem auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+  }
+
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .carousel-image {
+    width: 100%;
+    display: block;
+  }
+
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .carousel-button svg {
+    width: 24px;
+    height: 24px;
+    stroke: black;
+  }
+
+  .carousel-button:focus {
+    outline: 2px solid blue;
+  }
+
+  .carousel-button:hover {
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  .carousel-button.prev {
+    left: 10px;
+  }
+
+  .carousel-button.next {
+    right: 10px;
+  }
+
+  .carousel-dots {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 1;
+  }
+
+  .dot {
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+    padding: 0;
+    width: 12px;
+    height: 12px;
+  }
+
+  .dot:focus {
+    outline: 2px solid blue;
+  }
+
+  .dot.active, .dot:hover {
+    background-color: #333;
+  }
