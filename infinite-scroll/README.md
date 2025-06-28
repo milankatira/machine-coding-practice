@@ -1,54 +1,33 @@
-# React + TypeScript + Vite
+# Infinite Scroll Component
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Goal
 
-Currently, two official plugins are available:
+To implement a UI pattern where more content is loaded automatically as the user scrolls towards the bottom of a page or container, providing a continuous browsing experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## How to Run
 
-## Expanding the ESLint configuration
+1.  Navigate to the `infinite-scroll` directory:
+    ```bash
+    cd infinite-scroll
+    ```
+2.  Install dependencies:
+    ```bash
+    npm install
+    # or yarn install
+    ```
+3.  Run the development server:
+    ```bash
+    npm run dev
+    # or yarn dev
+    ```
+4.  Open your browser to the address provided (e.g., `http://localhost:5173`).
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Edge Cases to Consider
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+*   **Scroll Detection:** Accurately detecting when the user has scrolled near the bottom of the scrollable area.
+*   **Loading State:** Displaying a loading indicator while new content is being fetched.
+*   **No More Content:** What happens when all available content has been loaded?
+*   **Error Handling:** How to gracefully handle failures during data fetching.
+*   **Performance:** Ensuring smooth scrolling and efficient rendering of large lists.
+*   **Initial Load:** How much content to load initially before scrolling is needed.
+*   **Debouncing Scroll Events:** Preventing excessive data requests from rapid scrolling.
