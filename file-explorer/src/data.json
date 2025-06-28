@@ -1,0 +1,24 @@
+[
+  {
+    "id": "1",
+    "name": "public",
+    "isFolder": true,
+    "children": [
+      {
+        "id": "1-1",
+        "name": "index.css",
+        "isFolder": false
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "src",
+    "isFolder": true
+  },
+  {
+    "id": "3",
+    "name": "package.json",
+    "isFolder": false
+  }
+]
