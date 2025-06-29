@@ -317,19 +317,3 @@ const now = new Date();
 console.log(now.toLocaleDateString());
 console.log(now.toLocaleTimeString());
 ```
-
----
-
-**Good luck and happy coding 🚀**
-
-```
-
----
-
-### 🧭 Notes
-✅ Single **README.md** file.
-✅ Proper Markdown with headings, code blocks, and emoji for modern vibe.
-✅ You can copy it as-is and drop it straight into your repo.
-
-If you want further refinements (e.g. more minimal / more emojis / sections removed), just tell me!
-```
